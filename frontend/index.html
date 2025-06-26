@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym App - Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gym Management</h1>
+        <nav>
+            <a href="index.html" class="nav-link active">Gerenciar Usuários</a>
+            <a href="treinos.html" class="nav-link">Gerenciar Treinos</a>
+            <a href="exercicios.html" class="nav-link">Gerenciar Exercícios</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="usuarios-section" class="content-section">
+            <h2>Usuários</h2>
+            <button id="btn-novo-usuario" class="btn-new">Adicionar Novo Usuário</button>
+            <div id="usuarios-list" class="list-container"></div>
+        </section>
+    </main>
+
+
+    <dialog id="form-modal">
+        <h3 id="modal-title"></h3>
+        <form id="entity-form">
+            <div id="form-fields"></div>
+            <input type="hidden" id="entity-id">
+            <div class="modal-actions">
+                <button type="submit" id="btn-save">Salvar</button>
+                <button type="button" id="btn-cancel">Cancelar</button>
+            </div>
+        </form>
+    </dialog>
+
+
+    <script type="module" src="./js/usuarios.js"></script>
+</body>
+</html>
